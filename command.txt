@@ -1,0 +1,19 @@
+conda create -n aozora-lines pip python=3.8
+
+conda activate aozora-lines
+
+pip install sudachipy sudachidict_full
+
+pip install sudachidict_core
+
+pip install tqdm
+
+pip install pymagnitude==0.1.143 torch==1.9.0+cu102 torchvision==0.10.0+cu102 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+pip uninstall -y numpy
+pip uninstall -y setuptools
+pip install setuptools
+pip install numpy
+
+pip install torchtext
+pip install pandas
